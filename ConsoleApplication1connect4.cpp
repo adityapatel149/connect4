@@ -185,7 +185,7 @@ void wincheck()
 {
 	for (int i = 5; i >= 0; i--)
 	{
-		for (int j = 6; j >= 0; j--)
+		for (int j = 3; j >= 0; j--) //for j=4, j+3=7 which goes out of array and shows win for 3 tokens.
 		{
 			if (fillstat[i][j] == 1)     //checks only filled blocks
 			{
