@@ -185,11 +185,12 @@ void wincheck()
 {
 	for (int i = 5; i >= 0; i--)
 	{
-		for (int j = 3; j >= 0; j--) //for j=4, j+3=7 which goes out of array and shows win for 3 tokens.
+		for (int j = 6; j >= 0; j--) 
 		{
 			if (fillstat[i][j] == 1)     //checks only filled blocks
 			{
-				if ((pcheck[i][j] == pcheck[i][j + 1]) && (pcheck[i][j] == pcheck[i][j + 2]) && (pcheck[i][j] == pcheck[i][j + 3]) || ((pcheck[i][j] == pcheck[i - 1][j]) && (pcheck[i][j] == pcheck[i - 2][j]) && (pcheck[i][j] == pcheck[i - 3][j])))   //Horizontal and vertical check
+				if 
+					((pcheck[i][j] == pcheck[i][j -1]) && (pcheck[i][j] == pcheck[i][j -2]) && (pcheck[i][j] == pcheck[i][j -3]) || ((pcheck[i][j] == pcheck[i - 1][j]) && (pcheck[i][j] == pcheck[i - 2][j]) && (pcheck[i][j] == pcheck[i - 3][j])))   //Horizontal and vertical check
 				{
 					if (pcheck[i][j] == 1)
 					{
